@@ -21,11 +21,11 @@ public class ViewJPanel extends javax.swing.JPanel {
     /**
      * Creates new form ViewJPanel
      */
-     public ViewJPanel(Product person) {
+     public ViewJPanel(Product product) {
         initComponents();
-        displayPerson(person);
+        displayProduct(product);
     }
-     private void displayPerson(Product product){
+     private void displayProduct(Product product){
          String productName=product.getName();
          nameTextField.setText(productName);
          

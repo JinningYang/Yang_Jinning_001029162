@@ -17,10 +17,10 @@ public class MainJFrame extends javax.swing.JFrame {
     /**
      * Creates new form MainJFrame
      */
-    private Product person; 
+    private Product product; 
     public MainJFrame() {
         initComponents();
-        person=new Product();
+        product=new Product();
     }
 
     /**
@@ -106,13 +106,13 @@ public class MainJFrame extends javax.swing.JFrame {
 
     private void viewButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_viewButtonActionPerformed
         // TODO add your handling code here:
-        ViewJPanel viewJPanel=new ViewJPanel(person);
+        ViewJPanel viewJPanel=new ViewJPanel(product);
         splitPanel.setRightComponent(viewJPanel);
     }//GEN-LAST:event_viewButtonActionPerformed
 
     private void CreateButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CreateButtonActionPerformed
         // TODO add your handling code here:
-         CreateJPanel createJPanel=new CreateJPanel(person);
+         CreateJPanel createJPanel=new CreateJPanel(product);
          splitPanel.setRightComponent(createJPanel);
          
     }//GEN-LAST:event_CreateButtonActionPerformed
